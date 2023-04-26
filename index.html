@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="reset.css">
+<link rel="stylesheet" href="responsive.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,400&family=Roboto:wght@300;700&family=Tilt+Neon&display=swap" rel="stylesheet">
+    <title>Quest js intermediaro</title>
+    
+</head>
+<body>
+    <main>
+        <div class="background ">
+        <div class="descricao">
+            <h1 class="titulo">ficou com dúvida? Nos mande uma mensagem</h1>
+
+            <p class="texto">caso tenha ficado com qualquer duvida basta nos mandar uma mensagem e entraremos em contato em menos de 24h</p>
+        </div>
+        <form id="form">
+            <fieldset class="formulario ">
+                <div>
+                <input type="text" class="inputs required"  placeholder="nome completo*" oninput="nameValidate()" >
+               <span class="span-required">campo obrigatorio</span>
+            </div>
+              <div>
+                <input type="email"class="inputs required"  placeholder="email *" oninput="emailValidate()">
+              <span class="span-required">digite um email valido</span>
+            </div>
+            <div>
+                <input type="password"class="inputs required" placeholder="senha *" oninput="passwordValidate()" >
+               <span class="span-required">Digite uma senha com no minimo 8 caracteres</span>
+            </div>
+            <div>
+                <textarea  class="inputs area required"cols="15" rows="8" placeholder="*mensagem" oninput="textValidate()"></textarea>
+                <span class="span-required ">campo obrigatorio</span>
+                <label for="">*campos obrigatorios</label>
+            </div>
+             <input  class="btn"type="submit">
+            </fieldset>
+        </form>
+    </div>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
